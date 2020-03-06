@@ -3,8 +3,18 @@ header{
 }
 .main-nav{
   height: 30px;
-  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  
 }
+
+.left-main-nav,
+.right-main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+
 
 .nav-centre{
   height: 30px;
@@ -52,4 +62,60 @@ header{
 .news1{
   height: 200px;
   background-color: orange;
+}
+
+.latest-funding {
+  margin: 30px;
+}
+
+.heading{
+  background-color: purple;
+  height: 50px;
+
+}
+
+.index {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.index1 {
+  background-color: pink;
+  height: 300px;
+}
+
+.latest-adverts {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
+.latest-adverts1 {
+  height: 500px;
+  background-color: violet;
+}
+
+.latest-deals{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  margin: 30px;
+}
+
+.latest-deals1{
+  height: 200px;
+  background-color: thistle;
+}
+
+.first-footer {
+  background-color: tomato;
+  height: 150px;
+  width: 100%;
+
+}
+
+.second-footer{
+  background-color: teal;
+  height: 80px;
 }
