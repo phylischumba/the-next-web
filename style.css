@@ -150,7 +150,7 @@ header{
 
 .insights2 {
   height: 200px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   background-image: url("https://image.shutterstock.com/image-photo/silhouettes-concert-crowd-front-bright-260nw-214402048.jpg");
 }
 
@@ -158,9 +158,9 @@ header{
   color: white;
   margin-top: 0;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 28px;
   padding-left: 10px;
-  padding-top: 80px;
+  padding-top: 90px;
 }
 
 .insights3{
@@ -194,7 +194,7 @@ header{
 }
 
 .adverts{
-  height: 250px;
+  height: 150px;
   background-color: #ffffff;
 }
 
@@ -238,26 +238,107 @@ header{
   color: #7c7c7c;
 }
 .latest-funding {
-  margin: 30px;
+  margin: 50px;
+  background-color: #ffffff;
 }
 
-.heading{
-  background-color: purple;
-  height: 50px;
-
+.heading {
+  color: #FF4422;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -30px;
 }
+
+.left-heading {
+  font-weight: bold;
+  font-size: 27px;
+}
+
 
 .index {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
 .index1 {
-  background-color: pink;
   height: 300px;
+  
 }
 
+.index1 img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  top: 80px;
+  left: 30px; 
+}
+
+.index1 h4 {
+  background-color: #FF4422;
+  padding: 10px;
+  margin-top: 0;
+  color: white;
+  font-family: Avalon;
+  font-size: 18px;
+  margin: 0;
+  padding-left: 100px;
+}
+
+.index1-spans {
+  background-color: #ffebe7;
+  padding-left: 100px;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+ 
+.index1-spans h3 {
+  display: block;
+  font-weight: bolder;
+  font-family: Avalon;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.index1-spans span {
+  font-family: Shentox;
+  color: #8c817f;
+}
+
+.banking {
+  background-color: #FFFAF8;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.index1 ul {
+  background-color: #FFFAF8;
+  padding: 13px;
+  margin-top: 0;
+  border-top: 1px solid #ffcdc2;
+}
+
+.index1 li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+.index1 li a {
+  color: #6b6968;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.banking a {
+  text-decoration: none;
+  color: #6b6968;
+  margin-bottom: 5px;
+}
 .latest-adverts {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -266,8 +347,45 @@ header{
 
 .latest-adverts1 {
   height: 500px;
-  background-color: violet;
+ 
 }
+
+.most-popular {
+  height: 300px;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/app-store-apple-hed-796x412.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  color: white;
+
+}
+
+.color-overlay {
+  background: linear-gradient(#ffffff, black);
+  height: 100%;
+  opacity: 0.75;
+}
+
+.most-popular h6 {
+  padding-top: 200px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  
+}
+
+.most-popular a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: -20px;
+}
+
+.most-popular a,
+.most-popular span,
+.most-popular h6 {
+  margin-left: 10px;
+}
+
 
 .latest-deals{
   display: grid;
