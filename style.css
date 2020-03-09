@@ -239,6 +239,8 @@ header{
 }
 .latest-funding {
   margin: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
   background-color: #ffffff;
 }
 
@@ -264,7 +266,7 @@ header{
 
 .index1 {
   height: 300px;
-  
+
 }
 
 .index1 img {
@@ -272,7 +274,7 @@ header{
   height: 60px;
   position: relative;
   top: 80px;
-  left: 30px; 
+  left: 30px;
 }
 
 .index1 h4 {
@@ -293,7 +295,7 @@ header{
   padding-top: 5px;
   padding-bottom: 20px;
 }
- 
+
 .index1-spans h3 {
   display: block;
   font-weight: bolder;
@@ -341,13 +343,21 @@ header{
 }
 .latest-adverts {
   display: grid;
+  margin-right: 100px;
+  margin-left: 100px;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
 }
 
-.latest-adverts1 {
-  height: 500px;
- 
+.latest-adverts1 h3{
+  font-size: 25px;
+  font-weight: bolder;
+  color: red;
+  margin-left: 15px;
+}
+
+.latest-adverts1 h3:hover{
+  color: black;
 }
 
 .most-popular {
@@ -370,7 +380,7 @@ header{
   padding-top: 200px;
   margin-bottom: 0;
   margin-left: 10px;
-  
+
 }
 
 .most-popular a {
@@ -386,17 +396,98 @@ header{
   margin-left: 10px;
 }
 
+.latest-adverts1 li a {
+  text-decoration: none;
+  line-height: 1em;
+  color: #898989;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.latest-adverts1 li a:hover {
+  color: black;
+}
+
+.latest-adverts1 ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.latest-adverts1 ul li::before {
+  content: "\2022";
+  color: red;
+  width: 1em;
+}
+
+.latest-adverts1 hr{
+border: 0.5px solid #dcdcdc;
+}
+
+.latest-image{
+  height: 100px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  padding-left: 8px;
+  color: red;
+  background-color: #fff4f2;
+}
+
+.latest-image img{
+  width: 35%;
+  height: 100%;
+  float: right;
+}
+
+.latest-image span {
+  font-family: Shentox;
+  position: relative;
+  top: 30px;
+}
+
+.latest-image p{
+  font-family: ARS Maquette;
+  font-weight: bolder;
+  font-size: 15px;
+  position: relative;
+  top: 20px;
+}
 
 .latest-deals{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
-  margin: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.latest-deals1{
-  height: 200px;
-  background-color: thistle;
+.deals-heading{
+  display: flex;
+  color: red;
+  margin-left: 100px;
+  margin-right: 100px;
+  justify-content: space-between;
+}
+
+.deals-heading h3 a{
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.deals-heading a{
+  color: red;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.deals-heading a:hover{
+  color: black;
+}
+
+.deals-heading h3{
+  font-weight: bolder;
+  font-size: 20px;
 }
 
 .first-footer {
