@@ -12,7 +12,7 @@ header{
   justify-content: space-between;
   align-items: center;
   background-color: #131313;
-  
+
 }
 
 .left-main-nav{
@@ -31,10 +31,10 @@ header{
 }
 
 .left-main-nav li,
-.right-main-nav li, 
+.right-main-nav li,
 .nav-centre li {
   display: inline-block;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .main-nav a {
@@ -42,8 +42,6 @@ header{
   color: white;
   font-size: 14px;
 }
-
-
 
 .nav-centre {
   background-color: #FEFEFE;
@@ -103,40 +101,142 @@ header{
   display: grid;
   grid-template-columns: 70% 30%;
   height: 400px;
+  margin-left: 10px;
 }
 
 .insights1{
-  background-color: red;
+  position: relative;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/gender-equality--796x417.png");
+  background-size: cover;
+  background-color: transparent;
+  padding-left: 15px;
+  color: white;
 }
 
-.insights2{
+.date {
+  float: right;
+  margin-right: 15px;
+  margin-top: 20px;
+  }
+
+.insights {
+  position: relative;
+  top: 220px;
+}
+
+.insights1 p {
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  position: relative;
+  top: 170px;
+}
+
+.section1-icons{
+  position: relative;
+  top: 120px;
+  color: #9a9a9a;
+}
+
+.section1-icons i{
+  margin-right: 10px;
+}
+
+.side-section1{
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.insights2 {
   height: 200px;
-  background-color: blue;
+  margin-bottom: 10px;
+  background-image: url("https://image.shutterstock.com/image-photo/silhouettes-concert-crowd-front-bright-260nw-214402048.jpg");
+}
+
+.insights2 p{
+  color: white;
+  margin-top: 0;
+  font-weight: bolder;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-top: 80px;
 }
 
 .insights3{
   height: 200px;
-  background-color: green;
+  background-image: url("https://images.theconversation.com/files/317098/original/file-20200225-24680-8cth84.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip");
+  background-size: cover;
+  color: white;
+  padding-left: 10px;
+}
+
+.insights3-title {
+  position: relative;
+  top: 50px;
+}
+
+.insights3 p{
+  font-size: 25px;
+  font-weight: bolder;
+  position: relative;
+  top: 40px;
+}
+
+.insights3-icons span{
+  margin-left: 5px;
+  position: relative;
+  top: 25px;
+}
+
+.insights3 span{
+  margin-top: 20px;
 }
 
 .adverts{
   height: 250px;
-  background-color: lightgray;
+  background-color: #ffffff;
+}
+
+.news-heading{
+  color: red;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 100px;
 }
 
 .latest-news{
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
-.news1{
-  height: 200px;
-  background-color: orange;
+.news1 img{
+  width: 100%;
+  height: 150px;
 }
 
+.news1 a{
+  position: relative;
+  top: 5px;
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.news1 a:hover{
+  color: red;
+}
+
+.news1 span{
+  position: relative;
+  bottom: -10px;
+  font-size: 13px;
+  color: #7c7c7c;
+}
 .latest-funding {
   margin: 30px;
 }
