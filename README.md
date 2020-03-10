@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/imahnama/Smashing-Magazine/smashing-magazine/index.html)
+[Live Demo Link](https://raw.githack.com/Phylis05/the-next-web/working-branch/index.html)
 
 ## Getting Started
 
