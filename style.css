@@ -1,24 +1,29 @@
-@media screen and (max-device-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   main {
     margin-left: 10px;
     margin-right: 10px;
   }
 
-  div.nav-centre a {
+  .nav-centre a {
     font-size: 11px;
   }
 
-   div.main-section1 {
-    width: 100%;
-   display: grid;
-    grid-template-columns: 50% 50%;
-
-   }
+  div.main-section1 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 
   div.insights1 {
-    background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .insights1 p {
+    font-size: 19px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 17em;
   }
 
   span.insights {
@@ -28,77 +33,162 @@
 
   div.section1-icons {
     position: relative;
-    top: 145px;
+    top: 200px;
   }
 
   div.insights1 p {
     font-size: 30px;
-  } 
+  }
 
   section.latest-news,
   div.index,
   section.latest-adverts,
-  section.latest-deals { 
+  section.latest-deals {
     display: grid;
-    grid-template-columns: auto auto; 
+    grid-template-columns: auto auto;
+  }
+
+  section.latest-funding {
     margin-left: 10px;
     margin-right: 10px;
-   } 
+  }
+}
 
-   section.latest-funding {
-     margin-left: 10px;
-     margin-right: 10px;
-   }
-} 
+@media (min-width: 1024px) and (max-width: 1195px) {
+  main {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  div.side-section1 {
+    width: 100%;
+  }
+
+  div.insights2,
+  div.insights3 {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  div.insights1 p {
+    font-size: 45px;
+  }
+
+  div.insights2 p {
+    font-size: 25px;
+  }
+
+  section.side-section1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  section.latest-news,
+  div.index,
+  section.latest-adverts,
+  section.latest-deals,
+  div.main-section1,
+  div.side-section1 {
+    display: grid;
+    grid-template-columns: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  div.insights1,
+  div.insights2,
+  div.insights3 {
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+  }
+
+  div.insights1 {
+    margin-bottom: 10px;
+    width: 100%;
+    background-size: cover;
+  }
+
+  div.insights1 p {
+    font-size: 30px;
+    top: 20px;
+  }
+
+  div.news1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  section.news-heading,
+  section.deals-heading {
+    margin: 0;
+    padding: 2px;
+  }
+
+  div.heading {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  div.left-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+}
 
 body {
   padding: 0;
   margin: 0;
 }
 
-header{
+header {
   width: 100%;
 }
 
-.main-nav{
-  height: 30px;
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #131313;
 }
 
-.left-main-nav{
+.left-main-nav {
   float: left;
   margin-left: 0;
   padding-left: 0;
 }
 
-.right-main-nav{
+.right-main-nav {
   float: right;
 }
 
 .left-main-nav ul,
 .nav-centre ul {
-  padding-left: 10px;
+  padding-left: 1em;
 }
 
 .left-main-nav li,
 .right-main-nav li,
 .nav-centre li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 1em;
 }
 
 .main-nav a {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .nav-centre {
-  background-color: #FEFEFE;
-  height: 50px;
+  background-color: #fefefe;
   padding-left: 0;
   display: flex;
   justify-content: space-between;
@@ -106,27 +196,68 @@ header{
 
 .nav-centre a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
   color: #7e7e7e;
 }
 
 .centre-nav-icon {
   border-left: 1px solid #ececec;
-  padding-left: 15px;
+  padding-left: 1em;
 }
 
 .nav-centre i {
-    transform: scaleX(-1);
-    -moz-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
-    margin-top: 20px;
-    margin-right: 10px;
-    color: #7e7e7e;
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  margin-top: 1.3em;
+  margin-right: 1em;
+  color: #7e7e7e;
 }
 
 .nav-centre ul {
-  margin-top: 20px;
+  margin-top: 1.3em;
+}
+
+.news1 a {
+  position: relative;
+  top: 5px;
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.banking a {
+  text-decoration: none;
+  color: #6b6968;
+  margin-bottom: 5px;
+}
+
+.most-popular a {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: -20px;
+}
+
+.index1 li a {
+  color: #6b6968;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.latest-adverts1 li a {
+  text-decoration: none;
+  line-height: 1em;
+  color: #898989;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.deals-heading h3 a {
+  font-size: 25px;
+  font-weight: bolder;
 }
 
 .nav-centre a:hover {
@@ -134,90 +265,90 @@ header{
 }
 
 .last-nav {
-  height: 20px;
-  background-color: #ffdd33;
-  padding-top: 5px;
-  padding-left: 10px;
-  margin-bottom: 3px;
+  background-color: #fd3;
+  padding-top: 0.6em;
+  padding-left: 1em;
+  margin-bottom: 0.3em;
 }
 
-.last-nav-icon{
+.last-nav-icon {
   margin-left: 10px;
 }
 
 .last-nav i {
   font-size: 12px;
-
 }
 
 .main-section1 {
   display: grid;
   grid-template-columns: 70% 30%;
-  height: 400px;
   margin-left: 10px;
 }
 
-.insights1{
+.insights1 {
   position: relative;
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/03/gender-equality--796x417.png");
   background-size: cover;
   background-color: transparent;
-  padding-left: 15px;
+  padding-left: 10px;
   color: white;
+  width: 100%;
 }
 
 .date {
   float: right;
-  margin-right: 15px;
-  margin-top: 20px;
-  }
+  margin-right: 1em;
+  margin-top: 1em;
+}
 
 .insights {
+  position: relative;
+  top: 250px;
+}
+
+.insights1 p {
+  font-size: 3.5em;
+  font-weight: bolder;
+  color: white;
   position: relative;
   top: 220px;
 }
 
-.insights1 p {
-  font-size: 60px;
-  font-weight: bolder;
-  color: white;
+.section1-icons {
   position: relative;
   top: 170px;
-}
-
-.section1-icons{
-  position: relative;
-  top: 105px;
   color: #9a9a9a;
 }
 
-.section1-icons i{
-  margin-right: 10px;
+.section1-icons i {
+  margin-right: 1em;
 }
 
-.side-section1{
-  margin-right: 10px;
-  margin-left: 10px;
+.side-section1 {
+  margin-right: 1em;
+  margin-left: 1em;
   margin-top: 0;
+  width: 100%;
 }
 
 .insights2 {
-  height: 200px;
-  margin-bottom: 5px;
+  width: 100%;
+  height: 14em;
+  margin-bottom: 0.8em;
   background-image: url("https://image.shutterstock.com/image-photo/silhouettes-concert-crowd-front-bright-260nw-214402048.jpg");
 }
 
-.insights2 p{
+.insights2 p {
   color: white;
   margin-top: 0;
   font-weight: bolder;
-  font-size: 28px;
-  padding-left: 10px;
-  padding-top: 90px;
+  font-size: 1.7em;
+  padding-left: 1em;
+  padding-top: 4em;
 }
 
-.insights3{
-  height: 200px;
+.insights3 {
+  height: 14em;
   background-image: url("https://images.theconversation.com/files/317098/original/file-20200225-24680-8cth84.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=496&fit=clip");
   background-size: cover;
   color: white;
@@ -229,36 +360,36 @@ header{
   top: 50px;
 }
 
-.insights3 p{
+.insights3 p {
   font-size: 25px;
   font-weight: bolder;
   position: relative;
   top: 40px;
 }
 
-.insights3-icons span{
+.insights3-icons span {
   margin-left: 5px;
   position: relative;
   top: 25px;
 }
 
-.insights3 span{
+.insights3 span {
   margin-top: 20px;
 }
 
-.adverts{
+.adverts {
   height: 150px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
-.news-heading{
+.news-heading {
   color: red;
   font-weight: bolder;
   font-size: 20px;
   margin-left: 100px;
 }
 
-.latest-news{
+.latest-news {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
@@ -266,39 +397,31 @@ header{
   margin-right: 100px;
 }
 
-.news1 img{
+.news1 img {
   width: 100%;
   height: 150px;
 }
 
-.news1 a{
-  position: relative;
-  top: 5px;
-  color: black;
-  font-size: 18px;
-  font-weight: bolder;
-  text-decoration: none;
-}
-
-.news1 a:hover{
+.news1 a:hover {
   color: red;
 }
 
-.news1 span{
+.news1 span {
   position: relative;
   bottom: -10px;
   font-size: 13px;
   color: #7c7c7c;
 }
+
 .latest-funding {
   margin: 50px;
   margin-right: 100px;
   margin-left: 100px;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .heading {
-  color: #FF4422;
+  color: #f42;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -310,7 +433,6 @@ header{
   font-size: 27px;
 }
 
-
 .index {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -319,7 +441,6 @@ header{
 
 .index1 {
   height: 300px;
-
 }
 
 .index1 img {
@@ -331,11 +452,10 @@ header{
 }
 
 .index1 h4 {
-  background-color: #FF4422;
+  background-color: #f42;
   padding: 10px;
-  margin-top: 0;
   color: white;
-  font-family: Avalon;
+  font-family: Avalon, Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin: 0;
   padding-left: 100px;
@@ -352,18 +472,18 @@ header{
 .index1-spans h3 {
   display: block;
   font-weight: bolder;
-  font-family: Avalon;
+  font-family: Avalon, Arial, Helvetica, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
 }
 
 .index1-spans span {
-  font-family: Shentox;
+  font-family: Shentox, Arial, Helvetica, sans-serif;
   color: #8c817f;
 }
 
 .banking {
-  background-color: #FFFAF8;
+  background-color: #fffaf8;
   display: flex;
   flex-direction: column;
   padding-left: 50px;
@@ -372,7 +492,7 @@ header{
 }
 
 .index1 ul {
-  background-color: #FFFAF8;
+  background-color: #fffaf8;
   padding: 13px;
   margin-top: 0;
   border-top: 1px solid #ffcdc2;
@@ -383,17 +503,6 @@ header{
   margin-bottom: 5px;
 }
 
-.index1 li a {
-  color: #6b6968;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-.banking a {
-  text-decoration: none;
-  color: #6b6968;
-  margin-bottom: 5px;
-}
 .latest-adverts {
   display: grid;
   margin-right: 100px;
@@ -402,14 +511,14 @@ header{
   grid-gap: 10px;
 }
 
-.latest-adverts1 h3{
+.latest-adverts1 h3 {
   font-size: 25px;
   font-weight: bolder;
   color: red;
   margin-left: 15px;
 }
 
-.latest-adverts1 h3:hover{
+.latest-adverts1 h3:hover {
   color: black;
 }
 
@@ -420,11 +529,10 @@ header{
   background-repeat: no-repeat;
   margin-left: 10px;
   color: white;
-
 }
 
 .color-overlay {
-  background: linear-gradient(#ffffff, black);
+  background: linear-gradient(#fff, black);
   height: 100%;
   opacity: 0.75;
 }
@@ -433,28 +541,12 @@ header{
   padding-top: 200px;
   margin-bottom: 0;
   margin-left: 10px;
-
-}
-
-.most-popular a {
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: -20px;
 }
 
 .most-popular a,
 .most-popular span,
 .most-popular h6 {
   margin-left: 10px;
-}
-
-.latest-adverts1 li a {
-  text-decoration: none;
-  line-height: 1em;
-  color: #898989;
-  margin-left: 5px;
-  font-size: 14px;
 }
 
 .latest-adverts1 li a:hover {
@@ -472,11 +564,11 @@ header{
   width: 1em;
 }
 
-.latest-adverts1 hr{
-border: 0.5px solid #dcdcdc;
+.latest-adverts1 hr {
+  border: 0.5px solid #dcdcdc;
 }
 
-.latest-image{
+.latest-image {
   height: 100px;
   margin-bottom: 25px;
   margin-left: 10px;
@@ -485,27 +577,27 @@ border: 0.5px solid #dcdcdc;
   background-color: #fff4f2;
 }
 
-.latest-image img{
+.latest-image img {
   width: 35%;
   height: 100%;
   float: right;
 }
 
 .latest-image span {
-  font-family: Shentox;
+  font-family: Shentox, Arial, Helvetica, sans-serif;
   position: relative;
   top: 30px;
 }
 
-.latest-image p{
-  font-family: ARS Maquette;
+.latest-image p {
+  font-family: ARS Maquette, Arial, Helvetica, sans-serif;
   font-weight: bolder;
   font-size: 15px;
   position: relative;
   top: 20px;
 }
 
-.latest-deals{
+.latest-deals {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 20px;
@@ -515,7 +607,7 @@ border: 0.5px solid #dcdcdc;
   margin-bottom: 20px;
 }
 
-.deals-heading{
+.deals-heading {
   display: flex;
   color: red;
   margin-left: 100px;
@@ -523,22 +615,17 @@ border: 0.5px solid #dcdcdc;
   justify-content: space-between;
 }
 
-.deals-heading h3 a{
-  font-size: 25px;
-  font-weight: bolder;
-}
-
-.deals-heading a{
+.deals-heading a {
   color: red;
   text-decoration: none;
   font-size: 15px;
 }
 
-.deals-heading a:hover{
+.deals-heading a:hover {
   color: black;
 }
 
-.deals-heading h3{
+.deals-heading h3 {
   font-weight: bolder;
   font-size: 20px;
 }
@@ -575,12 +662,10 @@ border: 0.5px solid #dcdcdc;
   color: white;
 }
 
-.second-footer{
-  background-color: #000000;
+.second-footer {
+  background-color: #000;
   height: 80px;
   color: white;
   text-align: center;
   padding-top: 30px;
 }
-
-
