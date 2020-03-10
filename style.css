@@ -1,3 +1,56 @@
+@media screen and (max-device-width: 768px) {
+  main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  div.nav-centre a {
+    font-size: 11px;
+  }
+
+   div.main-section1 {
+    width: 100%;
+   display: grid;
+    grid-template-columns: 50% 50%;
+
+   }
+
+  div.insights1 {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  span.insights {
+    position: relative;
+    top: 200px;
+  }
+
+  div.section1-icons {
+    position: relative;
+    top: 145px;
+  }
+
+  div.insights1 p {
+    font-size: 30px;
+  } 
+
+  section.latest-news,
+  div.index,
+  section.latest-adverts,
+  section.latest-deals { 
+    display: grid;
+    grid-template-columns: auto auto; 
+    margin-left: 10px;
+    margin-right: 10px;
+   } 
+
+   section.latest-funding {
+     margin-left: 10px;
+     margin-right: 10px;
+   }
+} 
+
 body {
   padding: 0;
   margin: 0;
@@ -6,13 +59,13 @@ body {
 header{
   width: 100%;
 }
+
 .main-nav{
   height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #131313;
-
 }
 
 .left-main-nav{
@@ -134,7 +187,7 @@ header{
 
 .section1-icons{
   position: relative;
-  top: 120px;
+  top: 105px;
   color: #9a9a9a;
 }
 
@@ -491,13 +544,43 @@ border: 0.5px solid #dcdcdc;
 }
 
 .first-footer {
-  background-color: tomato;
+  background-color: #131313;
   height: 150px;
   width: 100%;
+}
 
+.footer-icons {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.footer-icons i {
+  margin-right: 20px;
+  color: white;
+}
+
+.footer-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: grey;
+  padding-right: 10px;
+  font-family: Shentox;
+}
+
+.footer-links a:hover {
+  color: white;
 }
 
 .second-footer{
-  background-color: teal;
+  background-color: #000000;
   height: 80px;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
 }
+
+
