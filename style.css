@@ -99,7 +99,7 @@
     padding: 0;
   }
 
-  span.insights{
+  span.insights {
     position: relative;
     top: 160px;
   }
@@ -114,30 +114,30 @@
     padding: 0;
   }
 
-  div.insights2{
+  div.insights2 {
     margin-bottom: 7px;
   }
 
-  div.insights3{
+  div.insights3 {
     padding-left: 15px;
   }
 
-  span.insights3-title{
+  span.insights3-title {
     position: relative;
     top: 140px;
   }
 
-  div.insights3 p{
+  div.insights3 p {
     position: relative;
     top: 130px;
   }
 
-  div.insights3-icons{
+  div.insights3-icons {
     position: relative;
     top: 100px;
   }
 
-   header{
+  header {
     font-size: 12px;
   }
 
@@ -153,7 +153,7 @@
     top: 140px;
   }
 
-  div.section1-icons{
+  div.section1-icons {
     position: relative;
     top: 120px;
   }
@@ -163,13 +163,13 @@
     height: auto;
   }
 
-  div.news1{
+  div.news1 {
     margin-left: 10px;
     margin-right: 10px;
     padding: 0;
   }
 
-  div.hr{
+  div.hr {
     width: 70%;
   }
 
@@ -291,6 +291,20 @@ h1 {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: -20px;
+  margin-left: 10px;
+}
+
+.deals-heading a {
+  color: red;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: grey;
+  padding-right: 10px;
+  font-family: Shentox, Arial, Helvetica, sans-serif;
 }
 
 .index1 li a {
@@ -570,6 +584,15 @@ h1 {
   margin-left: 15px;
 }
 
+.deals-heading a:hover {
+  color: black;
+}
+
+.deals-heading h3 {
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 .latest-adverts1 h3:hover {
   color: black;
 }
@@ -595,10 +618,13 @@ h1 {
   margin-left: 10px;
 }
 
-.most-popular a,
 .most-popular span,
 .most-popular h6 {
   margin-left: 10px;
+}
+
+.footer-links a:hover {
+  color: white;
 }
 
 .latest-adverts1 li a:hover {
@@ -608,7 +634,6 @@ h1 {
 .latest-adverts1 ul {
   list-style: none;
   padding-left: 5px;
-
 }
 
 .latest-adverts1 ul li::before {
@@ -617,7 +642,7 @@ h1 {
   width: 1em;
 }
 
-.hr{
+.hr {
   border-bottom: 1px solid #dcdcdc;
   width: 100%;
   margin-bottom: 10px;
@@ -670,21 +695,6 @@ h1 {
   justify-content: space-between;
 }
 
-.deals-heading a {
-  color: red;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.deals-heading a:hover {
-  color: black;
-}
-
-.deals-heading h3 {
-  font-weight: bolder;
-  font-size: 20px;
-}
-
 .first-footer {
   background-color: #131313;
   height: 150px;
@@ -704,17 +714,6 @@ h1 {
 .footer-links {
   text-align: center;
   margin-top: 20px;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: grey;
-  padding-right: 10px;
-  font-family: Shentox;
-}
-
-.footer-links a:hover {
-  color: white;
 }
 
 .second-footer {
