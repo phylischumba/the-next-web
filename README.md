@@ -55,6 +55,7 @@ Give a ⭐️ if you like this project!!
 
 - Freecodecamp
 - w3schools
+- The Odin Project 
 
 ## 📝 License
 
